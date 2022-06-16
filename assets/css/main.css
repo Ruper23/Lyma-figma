@@ -3,6 +3,7 @@
   --color-black: #000000;
   --txt-black: #1b1b1b;
   --txt-grey: #666666;
+  --footer-link: #7e7e7e;
   --container1440: clamp(320px, 100%, 1440px);
 
   --main-font: "Roboto", sans-serif;
@@ -45,6 +46,13 @@ h5,
 h6 {
   margin: 0;
   padding: 0;
+}
+input {
+  outline: none;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  border: none;
 }
 .wrapper {
   width: 100%;
@@ -401,4 +409,117 @@ h6 {
   height: 10px;
   background: var(--txt-grey);
   border-radius: 0px;
+}
+/* Footer */
+
+.footer {
+  background: #000;
+  margin: 103px 0 0 0;
+}
+
+.footer__wrap {
+  display: flex;
+  justify-content: center;
+  gap: 70px;
+}
+
+.footer__navigation {
+  display: flex;
+  margin: 96px 0 101px 0;
+  gap: 60px;
+}
+
+.navigation__list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.navigation__list-title,
+.newsletter__title {
+  margin: 0 0 40px 0;
+  font-family: var(--second-font);
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 20px;
+  color: var(--txt-white);
+}
+
+.navigation__list-link {
+  font-family: var(--second-font);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: var(--footer-link);
+  transition: all 0.3s;
+}
+.navigation__list-link:hover {
+  color: var(--txt-white);
+}
+.navigation__list-btn {
+  font-family: var(--second-font);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: var(--txt-white);
+}
+
+.footer__newsletter {
+  margin: 96px 0 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.newsletter__subscribe {
+  font-family: var(--second-font);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: right;
+  color: var(--footer-link);
+}
+
+.subscribe__block {
+  margin: 15px 0 50px;
+}
+
+#subscribe__email {
+  width: 231px;
+  height: 38px;
+  background: transparent;
+  border: 2px solid #ffffff;
+  font-family: var(--second-font);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  padding-left: 20px;
+  color: var(--footer-link);
+}
+#subscribe__submit {
+  width: 135px;
+  height: 38px;
+  background: var(--txt-white);
+  cursor: pointer;
+}
+.newsletter__social {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 17px;
+}
+
+.newsletter__social li {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  border: 1px solid #fff;
+}
+
+.newsletter__copy {
+  font-family: var(--second-font);
+  color: var(--footer-link);
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 12px;
+  text-align: right;
 }
