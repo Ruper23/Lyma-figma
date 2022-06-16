@@ -361,3 +361,44 @@ h6 {
 .meet__more:hover:before {
   width: 106%;
 }
+/* recommendation */
+.recommendation {
+  width: 100%;
+  overflow: hidden;
+}
+
+.recommendation__items {
+  width: 100%;
+  display: flex;
+  margin: 154px 0 0 0;
+}
+
+.recommendation__item {
+  min-width: 395px;
+  height: 222px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.item__text {
+  font-family: var(--main-font);
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 30px;
+  text-align: center;
+  letter-spacing: 0.8px;
+  color: var(--txt-black);
+  padding: 0 23px;
+}
+.recommendation__slider-pagination {
+  width: 180px !important;
+  margin: 25px auto 0;
+}
+.swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  background: var(--txt-grey);
+  border-radius: 0px;
+}
