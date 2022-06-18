@@ -245,24 +245,11 @@ input {
   position: relative;
   z-index: 2;
 }
-.service__btn:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: -3%;
-  width: 0;
-  height: 100%;
-  background: var(--txt-white);
-  transition: all 0.3s ease;
-  z-index: -1;
-}
+
 .service__btn:hover {
-  color: var(--color-black);
-  transition-delay: 0.1s;
+  opacity: 0.7;
 }
-.service__btn:hover:before {
-  width: 106%;
-}
+
 /* Product */
 .product {
   background: var(--color-black);
@@ -352,23 +339,11 @@ input {
   z-index: 2;
   transition: all 0.3s ease;
 }
-.meet__more:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: -3%;
-  width: 0;
-  height: 100%;
-  background: var(--txt-grey);
-  transition: all 0.3s ease;
-  z-index: -1;
-}
+
 .meet__more:hover {
   color: var(--txt-white);
 }
-.meet__more:hover:before {
-  width: 106%;
-}
+
 /* recommendation */
 .recommendation {
   width: 100%;
@@ -513,8 +488,18 @@ input {
   height: 26px;
   border-radius: 50%;
   border: 1px solid #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-
+.social__link {
+  font-size: 20px;
+  color: var(--txt-white);
+  transition: all 0.3s ease;
+}
+.social__link:hover {
+  opacity: 0.7;
+}
 .newsletter__copy {
   font-family: var(--second-font);
   color: var(--footer-link);
