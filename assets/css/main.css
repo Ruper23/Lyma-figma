@@ -142,18 +142,19 @@ input {
     flex-direction: column;
     justify-content: flex-start;
     transition: all 0.3s;
-    /* padding: 0 50px; */
+    overflow-y: scroll;
   }
   .header__nav.active {
     transform: translateY(0);
   }
   .nav:first-child {
-    padding-top: 50px;
+    padding-top: 10px;
   }
   .nav {
     flex-direction: column;
     order: 2;
-    margin-top: 20px;
+    margin-top: 10px;
+    gap: 10px;
   }
   .header__logo {
     order: 1;
@@ -162,7 +163,7 @@ input {
   }
   .nav__link a {
     opacity: 1;
-    font-size: 15px;
+    font-size: 13px;
   }
 }
 /* Burger */
@@ -258,6 +259,7 @@ input {
   letter-spacing: 0.44px;
   color: var(--txt-white);
   margin: 33px 0 60px;
+  max-width: 496px;
 }
 .wallness__btns {
   display: flex;
@@ -321,6 +323,25 @@ input {
     width: 150px;
     height: 30px;
     font-size: 12px;
+  }
+}
+@media (max-width: 400px) {
+  .wellness {
+    min-height: 335px;
+  }
+  .wallness__title {
+    font-size: 30px;
+    line-height: 40px;
+    color: var(--txt-white);
+    letter-spacing: 0.81px;
+  }
+  .wallness__discription {
+    font-size: 14px;
+    line-height: 20px;
+    margin: 13px 0 30px;
+  }
+  .wallness__btns {
+    gap: 20px;
   }
 }
 /* Supplement - Laser */
@@ -486,6 +507,11 @@ input {
     height: 300px;
   }
 }
+@media (max-width: 400px) {
+  .wallness__btns {
+    gap: 20px;
+  }
+}
 /* Meet */
 
 .meet {
@@ -597,6 +623,25 @@ input {
 @media (max-width: 442px) {
   .meet {
     background: url("../img/meet_our_founder.jpg") -40px 0 / cover no-repeat;
+  }
+}
+@media (max-width: 400px) {
+  .meet {
+    background: url("../img/meet_our_founder.jpg") -80px 0 / cover no-repeat;
+  }
+  .meet__title {
+    font-size: 22px;
+  }
+  .meet__more {
+    font-size: 11px;
+    line-height: 14px;
+    letter-spacing: 2px;
+  }
+  .meet__discription {
+    max-width: 200px;
+    font-size: 11px;
+    line-height: 16px;
+    margin: 10px 0 12px;
   }
 }
 /* recommendation */
@@ -854,5 +899,20 @@ input {
     justify-content: center;
     align-items: center;
     margin: 20px 0;
+  }
+}
+@media (max-width: 400px) {
+  .footer__navigation {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px 50px;
+  }
+  .navigation__list-title,
+  .newsletter__title {
+    margin-bottom: 10px;
+  }
+  .navigation__list {
+    margin: 0 20px;
+    gap: 5px;
   }
 }
