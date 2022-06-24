@@ -10,13 +10,14 @@
   <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="assets/css/animate.css">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/main.css">
 </head>
 
 <body>
   <div class="wrapper">
-    <header class="header">
+    <header class="header wow fadeIn">
       <div class="container">
         <div class="burger-menu-icon">
           <span></span>
@@ -31,7 +32,8 @@
             <li class="nav__link"><a href="#journal">JOURNAL</a></li>
             <li class="nav__link"><a href="#about">ABOUT</a></li>
           </ul>
-          <a class="header__logo" href="index.html"><img src="assets/img/logo.png" alt="Lyma" class="logo"></a>
+          <a class="header__logo" href="index.html"><img src="assets/img/logo.png" loading="lazy" alt="Lyma"
+              class="logo"></a>
           <ul class="nav">
             <li class="nav__link"><a href="#help">HELP & SUPPORT</a></li>
             <li class="nav__link"><a href="#activate">ACTIVATE</a></li>
@@ -43,20 +45,20 @@
     </header>
     <main class="main">
       <div class="container">
-        <section class="wellness">
-          <h1 class="wallness__title">
+        <section class="wellness wow fadeIn lazy" data-wow-delay="0.3s">
+          <h1 class="wallness__title wow fadeIn" data-wow-delay="0.4s">
             THE FUTURE OF WELLNESS.
           </h1>
-          <p class="wallness__discription">
+          <p class="wallness__discription wow fadeIn" data-wow-delay="0.5s">
             The perfect balance of science, nature and technology. Prepare to look and feel your absolute best.
           </p>
-          <div class="wallness__btns">
+          <div class="wallness__btns wow fadeIn" data-wow-delay="0.6s">
             <button class="wallness__btn btn">SUPPLEMENT</button>
             <button class="wallness__btn btn">LASER</button>
           </div>
         </section>
         <section class="supplement-laser">
-          <div class="service supplement">
+          <div class="service supplement wow fadeInLeft lazy" data-wow-offset="250">
             <h3 class="service__title">Supplement.</h3>
             <h5 class="service__subtitle">Nine powerful ingredients.</h5>
             <p class="service__discription">One ultimate formula.</p>
@@ -65,7 +67,7 @@
               <button class="service__btn supplement__buy">BUY</button>
             </div>
           </div>
-          <div class="service laser">
+          <div class="service laser wow fadeInRight lazy" data-wow-offset="250">
             <h3 class="service__title">Laser.</h3>
             <h5 class="service__subtitle">Ultimate skin regeneration.</h5>
             <p class="service__discription">A new dawn for beauty.</p>
@@ -75,14 +77,14 @@
             </div>
           </div>
         </section>
-        <section class="product">
+        <section class="product wow fadeInUp" data-wow-offset="200">
           <h2 class="product__title h2__title">THE QUEST FOR BETTER.</h2>
-          <img src="assets/img/quest4better.webp" alt="product" class="product__image">
+          <img src="assets/img/quest4better.webp" alt="product" class="product__image" loading="lazy">
           <p class="product__discription">At LYMA, we’re always searching for the perfect balance of science, nature and
             technology. Every LYMA product has been designed to work together. We know that when we discover the best,
             you’ll discover yours.</p>
         </section>
-        <section class="wellness__innovation">
+        <section class="wellness__innovation wow fadeInUp lazy" data-wow-offset="300">
           <h2 class="h2__title">
             THE FUTURE OF WELLNESS.
           </h2>
@@ -91,7 +93,7 @@
             <button class="wallness__btn btn">LASER</button>
           </div>
         </section>
-        <section class="meet">
+        <section class="meet wow fadeInUp lazy" data-wow-offset="200">
           <div class="meet__info">
             <h4 class="meet__title">Meet our founder.</h4>
             <p class="meet__discription">Lucy’s story is one you really need to read;
@@ -99,49 +101,51 @@
             <button class="meet__more">READ MORE</button>
           </div>
         </section>
-        <section class="recommendation">
+        <section class="recommendation wow fadeInUp" data-wow-offset="200">
           <div class="container">
             <div class="recomendation__slider swiper">
               <div class="recommendation__items swiper-wrapper">
                 <div class="recommendation__item swiper-slide">
                   <p class="item__text">“The new standard in navigation__list.”</p>
-                  <img src="assets/img/recommendations/grazia.png" alt="grazia" class="item__logo">
+                  <img src="assets/img/recommendations/grazia.png" alt="grazia" class="item__logo" loading="lazy">
                 </div>
                 <div class="recommendation__item swiper-slide">
                   <p class="item__text">“A massive scientific breakthrough.”</p>
-                  <img src="assets/img/recommendations/glamour.png" alt="glamour" class="item__logo">
+                  <img src="assets/img/recommendations/glamour.png" alt="glamour" class="item__logo" loading="lazy">
                 </div>
                 <div class="recommendation__item swiper-slide">
                   <p class="item__text">"A pioneer in health and wellness.”</p>
-                  <img src="assets/img/recommendations/eveningstandard.png" alt="eveningstandard" class="item__logo">
+                  <img src="assets/img/recommendations/eveningstandard.png" alt="eveningstandard" class="item__logo"
+                    loading="lazy">
                 </div>
                 <div class="recommendation__item swiper-slide">
                   <p class="item__text">“Miracle pills. The days of taking a cocktail of hit and miss vitamins are
                     over.”
                   </p>
-                  <img src="assets/img/recommendations/vogue.png" alt="vogue" class="item__logo">
+                  <img src="assets/img/recommendations/vogue.png" alt="vogue" class="item__logo" loading="lazy">
                 </div>
                 <div class="recommendation__item swiper-slide">
                   <p class="item__text">“Your one stop solution to feeling energised and focused.”</p>
-                  <img src="assets/img/recommendations/forbes.png" alt="forbes" class="item__logo">
+                  <img src="assets/img/recommendations/forbes.png" alt="forbes" class="item__logo" loading="lazy">
                 </div>
                 <div class="recommendation__item swiper-slide">
                   <p class="item__text">“A revelation. Not just about looking better and feeling better. LYMA is about
                     real health benefits.”</p>
                   <img src="assets/img/recommendations/thedailytelegraph.png" alt="the daily telegraph"
-                    class="item__logo">
+                    class="item__logo" loading="lazy">
                 </div>
                 <div class="recommendation__item swiper-slide">
                   <p class="item__text">“Experts are queuing up to praise LYMA.”</p>
-                  <img src="assets/img/recommendations/financialtimes.png" alt="financialtimes" class="item__logo">
+                  <img src="assets/img/recommendations/financialtimes.png" alt="financialtimes" class="item__logo"
+                    loading="lazy">
                 </div>
                 <div class="recommendation__item swiper-slide">
                   <p class="item__text">“The A-list secret health hack.”</p>
-                  <img src="assets/img/recommendations/dailymail.png" alt="dailymail" class="item__logo">
+                  <img src="assets/img/recommendations/dailymail.png" alt="dailymail" class="item__logo" loading="lazy">
                 </div>
                 <div class="recommendation__item swiper-slide">
                   <p class="item__text">“The celebrity super supplement.”</p>
-                  <img src="assets/img/recommendations/bazar.png" alt="bazar" class="item__logo">
+                  <img src="assets/img/recommendations/bazar.png" alt="bazar" class="item__logo" loading="lazy">
                 </div>
               </div>
               <div class="recommendation__slider-pagination">
@@ -224,6 +228,7 @@
   </div>
 
   <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  <script src="assets/js/wow.min.js"></script>
   <script src="assets/js/main.js"></script>
 </body>
 
